@@ -30,9 +30,23 @@ public class CreatingDateAndTimes {
         datetime = datetime.minusHours(3);
 
         //table 3.4 page 144
+        LocalDate date = LocalDate.of(2021 , 8 , 27); // my birth day ^^
+
+        playWithDate(date , date1);
 
 
 
+    }
+
+
+    private static  void playWithDate(LocalDate start , LocalDate end){
+
+        LocalDate upTo = start;
+
+        while (upTo.isBefore(end)){
+            System.out.println("Give new toy ! " + upTo);
+            upTo = upTo.plusMonths(5);
+        }
 
     }
 }
