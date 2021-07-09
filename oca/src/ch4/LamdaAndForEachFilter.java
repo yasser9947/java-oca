@@ -32,6 +32,5 @@ public class LamdaAndForEachFilter {
 
         fullNames.stream().forEach(ele -> System.out.println(ele.getFullName()));
 
-
     }
 }
